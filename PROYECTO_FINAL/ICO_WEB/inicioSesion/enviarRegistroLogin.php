@@ -25,9 +25,9 @@ if (isset($_POST['nombre_usuario']) && !empty($_POST['nombre_usuario'])) {
         echo "<h1 style='text-align:center;'>No puedes registrarte porque ya cuentas con un nombre de usuario:</h1>";
         echo "<h1 style='color:blue; text-align:center; text-decoration: underline;'>$nombre_usuario</h1>";
         echo "<div style='text-align: center;'>
-            <img src='media/no.gif' alt='Bienvenido' style='width: 200px; height: auto;'>
+            <img src='../media/no.gif' alt='Bienvenido' style='width: 200px; height: auto;'>
             </div>";
-        echo "<h1 style='text-align:center;><a href='index.php' style='font-size: 28px;'>Volver al inicio</a></h1>";
+        echo "<p style='text-align:center;'><a href='index.php' style='font-size: 28px;'>Volver al inicio</a></p>";
     } else {
         // Si el usuario no existe, insertar los nuevos datos en la base de datos
         $insertQuery = "INSERT INTO registro (nombre, apellido, edad, pais, telefono, correo, nombre_usuario, password)

@@ -7,7 +7,7 @@
 
 <?php
 
-include "../header.php";
+include "headerLogin.php";
 
 session_start();
 $no_usuario= $_SESSION['nombre_usuario'];//413112576

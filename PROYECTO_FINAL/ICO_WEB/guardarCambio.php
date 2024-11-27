@@ -10,7 +10,7 @@
 session_start();
 
 if (!isset($_SESSION['nombre_usuario'])) {
-    header("location: index.php");
+    header("location: inicioSesion/index.php");
     exit(); 
 }
 
